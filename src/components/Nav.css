@@ -1,0 +1,121 @@
+#navBack {
+
+}
+#navBar {
+    position: fixed;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, .5);
+    width: 100%;
+    padding: .5em 0 0 0;
+    height: 3em;
+    transition: all .5s;
+}
+#navBar h1 {
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 300;
+    margin-left: 3em;
+    text-shadow: 0 0 13px rgba(0, 0, 0, 1);
+}
+#navBar nav {
+    float: right;
+    position: relative;
+    top: -1.8em;
+    font-size: 1em;
+}
+#navBar a {
+    font-family: 'Crete Round', sans-serif;
+}
+#navToggle {
+    width: 2em;
+    height: 2em;
+    position: relative;
+    float: left;
+    top: -1.8em;
+    cursor: pointer;
+    left: 1em;
+}
+.toggleBar {
+    background-color: rgb(255, 255, 255);
+    width: 2em;
+    height: .2em;
+    margin-top: .25em;
+    margin-bottom: .3em;
+    border-radius: 3em;
+    transition: ease-in-out all .3s;
+    box-shadow: 0 0 46px 3px rgba(0,0,0,0.75);
+}
+
+.sided .toggleBar {
+    transform: rotateY(180deg) rotateZ(30deg);
+}
+#navHead {
+    position: relative;
+    left: 10vw;
+}
+.sideList {
+    width: 10vw;
+}
+
+.drawerPaper {
+    background-color: rgba(42, 42, 42, 0.65) !important;
+    padding-top: 3em;
+}
+.navLi span {
+    color: rgba(255, 255, 255, .8) !important;
+    text-transform: uppercase;
+}
+.noBack {
+    background-color: transparent !important;
+    box-shadow: none !important;
+}
+
+/*Responsive nav and drawer stuff
+Mid size:
+*/
+@media screen and (max-width: 1500px) {
+
+    #navHead {
+        left: 15vw;
+    }
+    .sideList {
+        width: 15vw;
+    }
+
+
+}
+
+@media screen and (max-width: 1000px) {
+
+    #navHead {
+        left: 0;
+    }
+    .sideList {
+        width: 20vw;
+    }
+
+
+}
+@media screen and (max-width: 700px) {
+
+    #navHead {
+        left: 0;
+    }
+    .sideList {
+        width: 35vw;
+    }
+
+
+}
+@media screen and (max-width: 500px) {
+
+    #navHead {
+        left: 0;
+    }
+    .sideList {
+        width: 45vw;
+    }
+
+
+}
