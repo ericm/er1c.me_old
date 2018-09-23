@@ -44,7 +44,7 @@ class Navbar extends Component {
                         <ListItem button>
                             <ListItemText className={"navLi"} primary="Home" />
                         </ListItem>
-                        <ListItem button component="a" href="#simple-list">
+                        <ListItem button component="a" href="#about">
                             <ListItemText className={"navLi"} primary="About Me" />
                         </ListItem>
                         <ListItem button component="a" href="#simple-list">

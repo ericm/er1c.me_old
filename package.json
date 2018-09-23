@@ -4,10 +4,13 @@
   "private": true,
   "dependencies": {
     "@material-ui/core": "latest",
+    "animate.css": "^3.7.0",
     "react": "^16.5.2",
+    "react-animate-on-scroll": "^2.1.5",
     "react-dom": "^16.5.2",
     "react-parallax": "^2.0.0",
     "react-scripts": "1.1.5",
+    "react-scrollable-anchor": "^0.6.1",
     "react-waypoint": "^8.0.3"
   },
   "scripts": {

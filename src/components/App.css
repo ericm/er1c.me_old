@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Dosis:200,300');
-@import url('https://fonts.googleapis.com/css?family=Crete+Round');
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500');
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 
@@ -12,6 +11,12 @@
     --desktop: 1300px;
     --small: 1000px;
     --phone: 750px;
+
+    --primary: rgba(103, 0, 210, 0.4);
+    --secondary: rgba(51, 49, 158, 0.4);
+}
+.link {
+    color: var(--primary);
 }
 
 /* Theme */
@@ -22,7 +27,7 @@ h1, li, a {
     list-style: none;
 }
 
-text {
+text, h2, span {
     font-family: 'Roboto', sans-serif;
     color: rgb(255, 255, 255);
 }
