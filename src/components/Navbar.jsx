@@ -6,7 +6,6 @@ import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 
-
 class Navbar extends Component {
 
     constructor(props) {
@@ -41,13 +40,13 @@ class Navbar extends Component {
                 </AppBar>
                 <Drawer classes={{ paper: 'drawerPaper',}} open={this.state.open} onClose={this.toggleDrawer} className={"sideBar"}>
                     <List className={"sideList"} component="nav">
-                        <ListItem button>
-                            <ListItemText className={"navLi"} primary="Home" />
+                        <ListItem button component="a" href="/">
+                            <ListItemText className={"navLi"} primary="Home"/>
                         </ListItem>
-                        <ListItem button component="a" href="#about">
+                        <ListItem button component="a" href="/#about">
                             <ListItemText className={"navLi"} primary="About Me" />
                         </ListItem>
-                        <ListItem button component="a" href="#simple-list">
+                        <ListItem button component="a" href="projects">
                             <ListItemText className={"navLi"} primary="Projects" />
                         </ListItem>
                     </List>

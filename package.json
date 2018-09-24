@@ -8,7 +8,9 @@
     "react": "^16.5.2",
     "react-animate-on-scroll": "^2.1.5",
     "react-dom": "^16.5.2",
+    "react-loader": "^2.4.5",
     "react-parallax": "^2.0.0",
+    "react-router-dom": "^4.3.1",
     "react-scripts": "1.1.5",
     "react-scrollable-anchor": "^0.6.1",
     "react-waypoint": "^8.0.3"

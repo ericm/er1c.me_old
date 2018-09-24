@@ -5,8 +5,20 @@ import ScrollAnimation from 'react-animate-on-scroll';
 import ScrollableAnchor from 'react-scrollable-anchor'
 import "animate.css/animate.min.css";
 import './Home.css';
-
 class Home extends Component {
+
+    loader = () => {
+        document.getElementById("loader").style.opacity = "0";
+        setTimeout(() => {
+            document.getElementById("loader").style.display = "none";
+        }, 1001);
+    };
+
+    componentDidMount = () => {
+
+        window.addEventListener("load", this.loader);
+
+    };
 
     navEnter = () => {
         document.getElementById("navBar").classList.add("noBack");
@@ -19,6 +31,12 @@ class Home extends Component {
 
         return (
             <main>
+                <div id={"loader"}>
+                    <header>
+                        The Best Site is Loading...
+                        <div id={"spinner"} />
+                    </header>
+                </div>
                 <div id={"parallax"}>
                     <Parallax
                         bgImage={require('../imgs/disp/l1.png')}
@@ -61,7 +79,9 @@ class Home extends Component {
                     onLeave={this.navLeave}
                 />
                 <ScrollableAnchor id={'about'} >
-                    <p></p>
+                    <p>
+
+                    </p>
                 </ScrollableAnchor>
                 <Parallax bgImage={require('../imgs/cliff1.jpg')}
                           strength={300}
@@ -70,7 +90,7 @@ class Home extends Component {
                         <h2>&lt; ABOUT ME /></h2>
                     </ScrollAnimation>
                     <ScrollAnimation animateIn={"fadeInRight"} className={"viewRight oneR"}>
-                        <span class="text">I'm an Irish <span aria-label={"flag"} role={"img"}>🇮🇪</span> CS Student currently studying <a href={"http://ucc.ie"} target={"_blank"} className={"link"}>@ UCC</a><br />
+                        <span className="text">I'm an Irish <span aria-label={"flag"} role={"img"}>🇮🇪</span> CS Student currently studying <a href={"http://ucc.ie"} target={"_blank"} className={"link"}>@ UCC</a><br />
                         I work on projects regularly so make sure to check them out.</span>
                     </ScrollAnimation>
                 </Parallax>
@@ -101,12 +121,31 @@ class Home extends Component {
                             <a href={"https://isocpp.org/"} target={"_blank"} className={"link"}>C++, </a>
                             <a href={"https://www.java.com/en/"} target={"_blank"} className={"link"}>Java, </a>
                             <a href={"https://kotlinlang.org/"} target={"_blank"} className={"link"}>Kotlin, </a>
-                            <a href={"https://www.python.org/"} target={"_blank"} className={"link"}>Python</a>
+                            <a href={"https://www.python.org/"} target={"_blank"} className={"link"}>Python, </a>
                             <a href={"http://php.net/"} target={"_blank"} className={"link"}>PHP and </a>
-                            <a href={"https://www.ecma-international.org/"} target={"_blank"} className={"link"}>Javasript</a>
+                            <a href={"https://www.ecma-international.org/"} target={"_blank"} className={"link"}>Javascript</a>
                             .</span>
                     </ScrollAnimation>
                 </Parallax>
+                <Parallax bgImage={require('../imgs/li.jpg')}
+                          strength={300}
+                          className={"view"}>
+                    <ScrollAnimation animateIn={"fadeInLeft"} className={"viewLeft fourL"}>
+                        <span className="text white">
+                            I've worked on a lot of personal projects, many of which can be found on my <a href={"https://github.com/TooFiveFive"} target={"_blank"}>GitHub account.</a>
+                            <br /><a target={"_blank"} href={"projects"}>
+                                > Click here to view all my projects. &lt;
+                            </a>
+                        </span>
+                    </ScrollAnimation>
+                    <ScrollAnimation animateIn={"fadeIn"} className={"viewRight fourR"}>
+                        <h2>&lt; PROJECTS /></h2>
+                    </ScrollAnimation>
+                </Parallax>
+                <footer>
+                    <i>Made with <a href={"https://reactjs.org/"} target={"_blank"}>React</a> by Eric Moynihan.</i><br />
+                    <a href={"https://github.com/TooFiveFive/er1c.me"} target={"_blank"}>View Source Code</a>
+                </footer>
             </main>
         );
     }

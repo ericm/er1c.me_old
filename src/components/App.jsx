@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
 import './App.css';
 import Navbar from './Navbar.jsx';
+import {BrowserRouter as Router, Route} from  'react-router-dom';
 
 //import routes
 import Home from './routes/Home.jsx';
+import Projects from './routes/Projects.jsx';
 
 class App extends Component {
     constructor(props) {
@@ -15,7 +17,14 @@ class App extends Component {
         return (
             <div className="App">
                 <Navbar name={this.state.title}/>
-                <Home />
+                <Router>
+                    <div>
+                        <Route exact path={"/"} component={Home} />
+
+                        <Route path={"/projects"} component={Projects}/>
+                    </div>
+                </Router>
+
             </div>
         );
     }

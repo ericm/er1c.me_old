@@ -60,6 +60,7 @@
     position: relative;
 }
 .view * .text {
+    padding: 10px;
     width: 100%;
     text-align: center;
     font-size: 1.3em;
@@ -67,6 +68,7 @@
     height: 40vh;
     margin-top: 20vh;
     top: -1.5em;
+    text-shadow: 0 0 15px rgb(0, 0, 0);
 }
 .view * .text img {
     width: 64px;
@@ -75,21 +77,32 @@
 .oneL {
     background-color: var(--primary);
 }
+.oneR {
+    background-color: rgba(255, 255, 255, 0.18);
+}
 .twoR {
     background-color: var(--secondary);
 }
 .text {
     color: rgb(0, 0, 0);
 }
+.white a {
+    color: rgb(209, 159, 255);
+}
 .threeL {
-    background-color: rgba(141, 23, 255, 0.59);
+    background-color: var(--primary);
 }
 .threeR {
-    background-color: rgba(255, 255, 255, 0.59);
+    background-color: rgba(255, 255, 255, 0.37);
+}
+.fourR {
+    background-color: var(--secondary);
 }
 .t3 {
-    padding: 10px;
-    margin-top: 15vh !important;
+    margin-top: 16vh !important;
+}
+.white {
+    color: #fff;
 }
 
 @keyframes und {
@@ -109,4 +122,10 @@
         left: -135px; width: 90px;}
     100% {
         left: -135px;}
+}
+
+@media screen and (max-width: 900px){
+    .viewLeft, .viewRight {
+        width: 100% !important;
+    }
 }
