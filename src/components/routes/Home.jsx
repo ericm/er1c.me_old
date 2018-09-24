@@ -85,65 +85,28 @@ class Home extends Component {
                         <h2>&lt; SOCIAL LINKS /></h2>
                     </ScrollAnimation>
                 </Parallax>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <div className="reveal">
-                        Widget, Inc.
-                    </div>
-
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
+                <Parallax bgImage={require('../imgs/mnt.jpg')}
+                          strength={300}
+                          className={"view"}>
+                    <ScrollAnimation animateIn={"fadeIn"} className={"viewLeft threeL"}>
+                        <h2>&lt; WHAT I DO /></h2>
+                    </ScrollAnimation>
+                    <ScrollAnimation animateIn={"fadeInRight"} className={"viewRight threeR"}>
+                        <span className="text t3">I make both personal and commercial products using many technologies such as: <br />
+                            <a href={"https://nodejs.org/en/"} target={"_blank"} className={"link"}>Node.js, </a>
+                            <a href={"https://angular.io"} target={"_blank"} className={"link"}>Angular, </a>
+                            <a href={"https://reactjs.org/"} target={"_blank"} className={"link"}>React, </a>
+                            <a href={"https://electronjs.org/"} target={"_blank"} className={"link"}>Electron, </a>
+                            <a href={"https://golang.org/"} target={"_blank"} className={"link"}>Golang, </a>
+                            <a href={"https://isocpp.org/"} target={"_blank"} className={"link"}>C++, </a>
+                            <a href={"https://www.java.com/en/"} target={"_blank"} className={"link"}>Java, </a>
+                            <a href={"https://kotlinlang.org/"} target={"_blank"} className={"link"}>Kotlin, </a>
+                            <a href={"https://www.python.org/"} target={"_blank"} className={"link"}>Python</a>
+                            <a href={"http://php.net/"} target={"_blank"} className={"link"}>PHP and </a>
+                            <a href={"https://www.ecma-international.org/"} target={"_blank"} className={"link"}>Javasript</a>
+                            .</span>
+                    </ScrollAnimation>
+                </Parallax>
             </main>
         );
     }

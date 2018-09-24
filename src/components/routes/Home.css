@@ -78,6 +78,19 @@
 .twoR {
     background-color: var(--secondary);
 }
+.text {
+    color: rgb(0, 0, 0);
+}
+.threeL {
+    background-color: rgba(141, 23, 255, 0.59);
+}
+.threeR {
+    background-color: rgba(255, 255, 255, 0.59);
+}
+.t3 {
+    padding: 10px;
+    margin-top: 15vh !important;
+}
 
 @keyframes und {
     0% {

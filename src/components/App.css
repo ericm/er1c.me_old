@@ -16,7 +16,7 @@
     --secondary: rgba(51, 49, 158, 0.4);
 }
 .link {
-    color: var(--primary);
+    color: rgba(103, 0, 210, 0.8);
 }
 
 /* Theme */
