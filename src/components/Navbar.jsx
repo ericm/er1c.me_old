@@ -5,6 +5,7 @@ import Drawer from "@material-ui/core/Drawer/Drawer";
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
+import { Link } from 'react-router-dom';
 
 class Navbar extends Component {
 
@@ -38,17 +39,17 @@ class Navbar extends Component {
                     </div>
 
                 </AppBar>
-                <Drawer classes={{ paper: 'drawerPaper',}} open={this.state.open} onClose={this.toggleDrawer} className={"sideBar"}>
+                <Drawer classes={{ paper: 'drawerPaper',}} open={this.state.open} onClick={this.toggleDrawer} onClose={this.toggleDrawer} className={"sideBar"}>
                     <List className={"sideList"} component="nav">
-                        <ListItem button component="a" href="/">
+                        <Link to={{pathname: "/", hash: "#"}}><ListItem button>
                             <ListItemText className={"navLi"} primary="Home"/>
-                        </ListItem>
-                        <ListItem button component="a" href="/#about">
+                        </ListItem></Link>
+                        <ListItem button component={"a"} href={"#about"}>
                             <ListItemText className={"navLi"} primary="About Me" />
                         </ListItem>
-                        <ListItem button component="a" href="projects">
-                            <ListItemText className={"navLi"} primary="Projects" />
-                        </ListItem>
+                        <Link to={"/projects"}><ListItem button>
+                            <ListItemText className={"navLi"}>Projects</ListItemText>
+                        </ListItem></Link>
                     </List>
                 </Drawer>
             </div>

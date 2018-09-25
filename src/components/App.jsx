@@ -12,13 +12,32 @@ class App extends Component {
         super(props);
         this.state = {title: "Eric Moynihan"};
     }
+    loader = () => {
+        document.getElementById("loader").style.opacity = "0";
+        setTimeout(() => {
+            document.getElementById("loader").style.display = "none";
+        }, 1001);
+    };
+
+    componentDidMount = () => {
+
+        window.addEventListener("load", this.loader);
+
+    };
     render() {
         document.title = this.state.title;
         return (
             <div className="App">
-                <Navbar name={this.state.title}/>
+                <div id={"loader"}>
+                    <header>
+                        The Best Site is Loading...
+                        <div id={"spinner"} />
+                    </header>
+                </div>
                 <Router>
                     <div>
+                        <Navbar name={this.state.title}/>
+
                         <Route exact path={"/"} component={Home} />
 
                         <Route path={"/projects"} component={Projects}/>

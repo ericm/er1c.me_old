@@ -5,20 +5,9 @@ import ScrollAnimation from 'react-animate-on-scroll';
 import ScrollableAnchor from 'react-scrollable-anchor'
 import "animate.css/animate.min.css";
 import './Home.css';
+import { Link } from 'react-router-dom';
+
 class Home extends Component {
-
-    loader = () => {
-        document.getElementById("loader").style.opacity = "0";
-        setTimeout(() => {
-            document.getElementById("loader").style.display = "none";
-        }, 1001);
-    };
-
-    componentDidMount = () => {
-
-        window.addEventListener("load", this.loader);
-
-    };
 
     navEnter = () => {
         document.getElementById("navBar").classList.add("noBack");
@@ -31,12 +20,6 @@ class Home extends Component {
 
         return (
             <main>
-                <div id={"loader"}>
-                    <header>
-                        The Best Site is Loading...
-                        <div id={"spinner"} />
-                    </header>
-                </div>
                 <div id={"parallax"}>
                     <Parallax
                         bgImage={require('../imgs/disp/l1.png')}
@@ -133,9 +116,9 @@ class Home extends Component {
                     <ScrollAnimation animateIn={"fadeInLeft"} className={"viewLeft fourL"}>
                         <span className="text white">
                             I've worked on a lot of personal projects, many of which can be found on my <a href={"https://github.com/TooFiveFive"} target={"_blank"}>GitHub account.</a>
-                            <br /><a target={"_blank"} href={"projects"}>
+                            <br /><Link to={"/projects"}>
                                 > Click here to view all my projects. &lt;
-                            </a>
+                            </Link>
                         </span>
                     </ScrollAnimation>
                     <ScrollAnimation animateIn={"fadeIn"} className={"viewRight fourR"}>

@@ -1,30 +1,23 @@
 import React, { Component } from 'react';
 import './Projects.css';
+//import { Link } from 'react-router-dom';
 
 class Projects extends Component {
-
-    loader = () => {
-        document.getElementById("loader").style.opacity = "0";
-        setTimeout(() => {
-            document.getElementById("loader").style.display = "none";
-        }, 1001);
-    };
-
-    componentDidMount = () => {
-
-        window.addEventListener("load", this.loader);
-
-    };
 
     render() {
         return (
             <main>
-                <div id={"loader"}>
-                    <header>
-                        The Best Site is Loading...
-                        <div id={"spinner"} />
-                    </header>
-                </div>
+                <div id={"break"} />
+                <article>
+                    <section className={"one"}>
+                        <h1>RSS FEED READER</h1>
+                    </section>
+                    <section className={"two"}>
+                        <p>
+                            Test fafafafafafaf afafasdfa f asf a awf awf
+                        </p>
+                    </section>
+                </article>
             </main>
         );
     }

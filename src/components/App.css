@@ -36,13 +36,13 @@ text, h2, span {
     width: 100vw;
     height: 100vh;
     background-color: #111111;
-    z-index: 1000;
+    z-index: 10;
     transition: opacity ease-out 1s;
     opacity: 100;
 }
 #loader header {
     color: #fff;
-    font-family: 'Dosis', sans-serif;
+    font-family: Calibri, sans-serif;
     font-size: 2em;
     text-align: center;
     margin-top: 45vh;

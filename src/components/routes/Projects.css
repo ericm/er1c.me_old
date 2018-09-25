@@ -1,0 +1,23 @@
+body {
+    background-color: #111111;
+}
+article {
+    display: flex;
+    width: 100%;
+}
+section {
+    padding: 20px;
+    display: inline-flex;
+    width: 50%;
+
+}
+.one {
+    background: rgba(11, 16, 133, 0.51) url("../imgs/mnt.jpg");
+}
+
+.two {
+    background-color: rgba(255, 255, 255, 0.36);
+}
+#break {
+    height: 50px;
+}
