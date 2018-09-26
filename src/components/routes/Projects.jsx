@@ -1,8 +1,16 @@
 import React, {Component} from 'react';
 import './Projects.css';
 import Markdown from 'react-markdown';
+import Waypoint from "react-waypoint";
 
 class Projects extends Component {
+
+    navEnter = () => {
+        document.getElementById("navBar").classList.add("noBack");
+    };
+    navLeave = () => {
+        document.getElementById("navBar").classList.remove("noBack");
+    };
 
     constructor(props) {
         super(props);
@@ -26,18 +34,17 @@ class Projects extends Component {
     render() {
         return (
             <main>
-                <div id={"break"} />
-                <article>
-                    <section className={"one"}>
-                        <h1>RSS FEED READER</h1>
-                    </section>
-                    <section className={"two"}>
-                        <p>
-                            Tef
-                        </p>
-                    </section>
+                <Waypoint
+                    onEnter={this.navEnter}
+                    onLeave={this.navLeave}
+                />
+                <article id={"pr"}>
+                    <h1>PROJECTS</h1>
                 </article>
-                <Markdown source={this.state.markdown}/>
+                <article id={"md"}>
+                    <Markdown source={this.state.markdown}/>
+                </article>
+
             </main>
         );
     }
