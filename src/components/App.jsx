@@ -43,7 +43,10 @@ class App extends Component {
                         <Route path={"/projects"} component={Projects}/>
                     </div>
                 </Router>
-
+                <footer>
+                    <i>Made with <a href={"https://reactjs.org/"} target={"_blank"}>React</a> by Eric Moynihan.</i><br />
+                    <a href={"https://github.com/TooFiveFive/er1c.me"} target={"_blank"}>View Source Code</a>
+                </footer>
             </div>
         );
     }

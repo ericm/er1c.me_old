@@ -22,13 +22,19 @@ main * {
 }
 #md {
     width: 70vw;
+    position: relative;
+    left: 50%;
+    margin-left: -35vw;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 2em;
+    margin-top: 30px;
 }
 #md * {
     padding: 15px;
     text-shadow: 0 0 12px rgba(104, 104, 104, 1);
 }
 #md * h1 {
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid #444444;
     box-shadow: rgba(255, 255, 255, 0.51) 0 0 10px -10px;
 }
 #md a {
@@ -36,7 +42,6 @@ main * {
 }
 #md a, #md p {
     padding: 0;
-
     transition: all .3s;
 }
 #md a:hover {
@@ -44,9 +49,27 @@ main * {
 }
 #md * img {
     height: auto;
-    width: 70vw;
+    width: 65vw;
+    border-radius: 2em;
+}
+#md * hr {
+    border-bottom: solid 1px #fff;
 }
 
 #break {
     height: 50px;
+}
+
+@media screen and (max-width: 900px) {
+    #md {
+        width: 90vw;
+        position: relative;
+        left: 50%;
+        margin-left: -45vw;
+    }
+    #md * img {
+        height: auto;
+        width: 78vw;
+        border-radius: 2em;
+    }
 }
