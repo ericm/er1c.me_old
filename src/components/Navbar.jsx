@@ -26,9 +26,6 @@ class Navbar extends Component {
     };
 
     render() {
-        if (document.title !== "Eric Moynihan") {
-            this.setState({home: false});
-        }
 
         return (
             <div>
