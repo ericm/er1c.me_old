@@ -82,10 +82,12 @@ class Home extends Component {
                           className={"view"}>
                     <ScrollAnimation animateIn={"fadeInLeft"} className={"viewLeft twoL"}>
                         <span className="text"><a href={"https://github.com/TooFiveFive"} target={"_blank"} ><img alt={""} src={require("../imgs/GitHub-Mark-Light-64px.png")}/></a> <a href={"https://dribbble.com/TooFiveFive"} target={"_blank"} ><img alt={""} src={require("../imgs/dribbble-ball-mark.svg")}/></a>
-                        <a href={"mailto:mail@er1c.me"} target={"_blank"} ><img alt={""} src={require("../imgs/(at).svg")}/></a></span>
+                            <a href={"https://www.linkedin.com/in/eric-moynihan-871371a1/"} target={"_blank"} ><img alt={"Linkedin"} title={"LinkedIn"} src={require("../imgs/ln.png")}/></a>
+                            <a href={"mailto:mail@er1c.me"} target={"_blank"} ><img title={"Email"} alt={""} src={require("../imgs/(at).svg")}/></a>
+                        </span>
                     </ScrollAnimation>
                     <ScrollAnimation animateIn={"fadeIn"} className={"viewRight twoR"}>
-                        <h2>&lt; SOCIAL LINKS /></h2>
+                        <h2>&lt; CONTACT /></h2>
                     </ScrollAnimation>
                 </Parallax>
                 <Parallax bgImage={require('../imgs/mnt.jpg')}
