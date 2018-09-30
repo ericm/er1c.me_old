@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Waypoint from 'react-waypoint';
 import { Parallax } from 'react-parallax';
 import ScrollAnimation from 'react-animate-on-scroll';
-import ScrollableAnchor from 'react-scrollable-anchor'
+import ScrollableAnchor from 'react-scrollable-anchor';
 import "animate.css/animate.min.css";
 import './Home.css';
 import { Link } from 'react-router-dom';

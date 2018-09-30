@@ -108,6 +108,8 @@
     color: #fff;
 }
 
+
+
 @keyframes und {
     0% {
         left: -135px; width: 90px;}
@@ -143,5 +145,14 @@
     }
     .view * h2 {
         top: -2em;
+    }
+    #underline {
+        display: none;
+    }
+    .view * .text, .view * .text {
+        text-shadow: 10px 0 15px rgb(0, 0, 0);
+    }
+    .view * h2 {
+        text-shadow: 10px 0 15px rgb(0, 0, 0);
     }
 }
