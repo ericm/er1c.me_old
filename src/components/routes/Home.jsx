@@ -78,7 +78,7 @@ class Home extends Component {
                         <h2>&lt; ABOUT ME /></h2>
                     </ScrollAnimation>
                     <ScrollAnimation animateIn={"fadeInRight"} className={"viewRight oneR"}>
-                        <span className="text">I'm an Irish <span aria-label={"flag"} role={"img"}>🇮🇪</span> CS Student currently studying <a href={"http://ucc.ie"} target={"_blank"} className={"link"}>@ UCC</a><br />
+                        <span className="text">I'm an Irish CS Student currently studying <a href={"http://ucc.ie"} target={"_blank"} className={"link"}>@ UCC</a><br />
                         I work on projects regularly so make sure to check them out.</span>
                     </ScrollAnimation>
                 </Parallax>
