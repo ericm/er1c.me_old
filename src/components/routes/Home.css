@@ -66,10 +66,10 @@
     padding: 10px;
     width: 100%;
     text-align: center;
-    font-size: 1.3em;
+    font-size: 1.6em;
     position: relative;
     height: 40vh;
-    margin-top: 18vh;
+    margin-top: 20vh;
     top: -1.5em;
     text-shadow: 0 0 15px rgb(0, 0, 0);
 }
@@ -127,6 +127,13 @@
         left: -135px; width: 90px;}
     100% {
         left: -135px;}
+}
+
+@media screen and (max-width: 1300px) {
+    .view * .text {
+        font-size: 1.3em;
+        margin-top: 18vh;
+    }
 }
 
 @media screen and (max-width: 900px){

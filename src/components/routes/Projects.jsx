@@ -5,6 +5,8 @@ import Waypoint from "react-waypoint";
 
 class Projects extends Component {
 
+
+
     navEnter = () => {
         document.getElementById("navBar").classList.add("noBack");
     };
@@ -14,7 +16,7 @@ class Projects extends Component {
 
     constructor(props) {
         super(props);
-        this.state = {markdown: "# loading"};
+        this.state = {markdown: "# loading", title: "Projects - Eric Moynihan"};
     }
 
     componentDidMount() {
@@ -32,6 +34,7 @@ class Projects extends Component {
     }
 
     render() {
+        document.title = this.state.title;
         return (
             <main>
                 <Waypoint

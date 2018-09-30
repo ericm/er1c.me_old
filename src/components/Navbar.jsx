@@ -11,7 +11,7 @@ class Navbar extends Component {
 
     constructor(props) {
         super(props);
-        this.state = {val: this.props.name, open: false};
+        this.state = {val: this.props.name, open: false, home: true};
     }
 
     toggleDrawer = () => {
@@ -26,6 +26,10 @@ class Navbar extends Component {
     };
 
     render() {
+        if (document.title !== "Eric Moynihan") {
+            this.setState({home: false});
+        }
+
         return (
             <div>
                 <AppBar id={"navBar"}>

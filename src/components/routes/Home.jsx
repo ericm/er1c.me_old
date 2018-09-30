@@ -9,6 +9,11 @@ import { Link } from 'react-router-dom';
 
 class Home extends Component {
 
+    constructor(props) {
+        super(props);
+        this.state = {title: "Eric Moynihan"};
+    }
+
     navEnter = () => {
         document.getElementById("navBar").classList.add("noBack");
     };
@@ -17,7 +22,7 @@ class Home extends Component {
     };
 
     render() {
-
+        document.title = this.state.title;
         return (
             <main>
                 <div id={"parallax"}>
