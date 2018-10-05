@@ -14,6 +14,22 @@
     padding-top: 40vh;
     text-align: center;
 }
+.bottom {
+    font-family: 'Dosis', sans-serif;
+    text-align: center;
+    width: 100%;
+    padding: 10px 0 10px;
+    font-size: 2em;
+    background-color: rgba(1, 0, 10, 0.34);
+    transition: all .3s;
+}
+.bottom:hover {
+    background-color: rgba(98, 72, 255, 0.7);
+}
+.bottom a {
+    color: #6248ff;
+    text-shadow: 0 0 7px #000000;
+}
 #parD * b {
     font-family: 'Dosis', sans-serif;
 }

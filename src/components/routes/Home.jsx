@@ -86,7 +86,7 @@ class Home extends Component {
                           strength={300}
                           className={"view"}>
                     <ScrollAnimation animateIn={"fadeInLeft"} className={"viewLeft twoL"}>
-                        <span className="text"><a href={"https://github.com/TooFiveFive"} target={"_blank"} ><img alt={""} src={require("../imgs/GitHub-Mark-Light-64px.png")}/></a> <a href={"https://dribbble.com/TooFiveFive"} target={"_blank"} ><img alt={""} src={require("../imgs/dribbble-ball-mark.svg")}/></a>
+                        <span className="text"><a href={"https://github.com/TooFiveFive"} target={"_blank"} title={"GitHub"}><img alt={""} src={require("../imgs/GitHub-Mark-Light-64px.png")}/></a> <a href={"https://dribbble.com/TooFiveFive"} target={"_blank"} ><img alt={""} src={require("../imgs/dribbble-ball-mark.svg")} title={"Dribbble"}/></a>
                             <a href={"https://www.linkedin.com/in/eric-moynihan-871371a1/"} target={"_blank"} ><img alt={"Linkedin"} title={"LinkedIn"} src={require("../imgs/ln.png")}/></a>
                             <a href={"mailto:mail@er1c.me"} target={"_blank"} ><img title={"Email"} alt={""} src={require("../imgs/(at).svg")}/></a>
                         </span>
@@ -132,6 +132,9 @@ class Home extends Component {
                         <h2>&lt; PROJECTS /></h2>
                     </ScrollAnimation>
                 </Parallax>
+                <aside class="bottom">
+                    <a href={"https://drive.google.com/open?id=1CtAGjg7UvgkAlcdt5L3n98MgUo6Jkwgq"} title={"Link to my CV"} target={"_blank"}>&lt; MY CV /></a>
+                </aside>
 
             </main>
         );
