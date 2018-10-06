@@ -7,3 +7,7 @@ This is the repo for the Source code for [er1c.me](http://er1c.me)
 Type:
 - `npm install`
 - `npm start`
+
+## Building
+
+- `npm run build`
